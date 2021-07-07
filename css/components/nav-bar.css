@@ -1,0 +1,44 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  box-sizing: border-box; /*css hack*/
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__link {
+  color: #2e363e;
+  position: relative;
+}
+.nav__notification {
+  background-color: tomato;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center; /*위치 이동은 먼저 center로 놓고 움직여*/
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  position: absolute; /*다른 layer로 이동, inline->block으로 변경*/
+  left: 15px; /*container를 position:relative로 해야지*/
+  bottom: 15px;
+}
+.nav__ellip_notification {
+  background-color: tomato;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  position: relative;
+  left: 30px;
+  top: 5px;
+}
